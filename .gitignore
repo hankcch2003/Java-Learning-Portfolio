@@ -1,0 +1,39 @@
+# ---------- Eclipse IDE ----------
+.metadata/
+.project
+.classpath
+.settings/
+
+# ---------- IntelliJ IDEA ----------
+.idea/
+*.iml
+
+# ---------- VS Code ----------
+.vscode/
+
+# ---------- Java Compiled Files ----------
+*.class
+bin/
+out/
+target/
+
+# ---------- Build and Temporary Files ----------
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# ---------- Operating System Files ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- OCP Course Materials ----------
+JavaOCP/ocp 課程講義.pdf
+
+# ---------- Sensitive Files ----------
+.env
+.env.*
+*.pem
+*.key
