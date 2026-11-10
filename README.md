@@ -1,12 +1,14 @@
 # Java Learning Portfolio (Java 學習作品集)
 
-Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819）的學習及實作紀錄。
+Java 基礎程式設計與 Oracle Java SE 11 Developer Certification（1Z0-819）考試準備及 Java SE 21 程式實作紀錄。
 
 ## 專案簡介
 
 本專案用來整理 Java 程式設計的學習成果，包含 Java 基礎語法、物件導向程式設計、資料型別、運算子、流程控制、陣列、字串、方法及 Java API 等練習。
 
-除了 Java 基礎練習，也持續整理 Oracle Java SE 21 Developer Certification（OCP-819）的考點程式範例、語法測試及學習紀錄。
+除了 Java 基礎練習，也持續整理 Oracle Java SE 11 Developer Certification（1Z0-819）的考點程式範例、語法測試及學習紀錄。
+
+本專案以 Java SE 11 作為認證考試準備目標，並主要使用 Java SE 21 進行程式實作，透過實際撰寫、編譯及執行程式，加深對 Java 語法及程式設計概念的理解。
 
 本作品集以實際完成的練習與程式碼為主，依照學習日期及主題分類，方便查閱、測試及持續更新。
 
@@ -15,15 +17,16 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
 | 類別 | 技術或工具 |
 |---|---|
 | 程式語言 | Java |
-| Java 版本 | Java SE 21 |
+| 考試版本 | Java SE 11 |
+| 實作版本 | Java SE 21 |
 | 基礎練習 | Java Basic |
-| 認證準備 | Oracle Java SE 21 Developer Certification（OCP-819） |
+| 認證準備 | Oracle Java SE 11 Developer Certification（1Z0-819） |
 | 開發環境 | Windows |
 | 開發工具 | Java IDE、Visual Studio Code |
 | 命令列工具 | Windows CMD |
 | 版本控制 | Git、GitHub |
 
-本專案包含 Java 基礎語法練習及 OCP-819 考試準備程式範例；不代表所有 Java SE 21 考試範圍均已完成，也不代表已取得 Oracle Java 認證。
+本專案以 Java SE 11 作為 1Z0-819 考試準備方向，並使用 Java SE 21 進行程式實作。由於不同 Java 版本之間可能存在語法及 API 差異，練習時會特別留意 Java SE 11 與 Java SE 21 的版本相容性。
 
 ## 專案結構
 
@@ -54,6 +57,8 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
     │   │   └── src/
     │   ├── Java_20261101_1/
     │   │   └── src/
+    │   ├── Java_20261108_1/
+    │   │   └── src/
     │   └── ...
     │
     ├── .gitignore
@@ -83,11 +88,13 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
 
 此區域主要用來建立 Java 程式設計基礎，熟悉語法規則及基本程式邏輯。
 
-## 二、Oracle Java SE 21 OCP-819 考試準備
+## 二、Oracle Java SE 11 Developer（1Z0-819）考試準備
 
 `JavaOCP/`
 
-依照學習日期及練習順序整理 Oracle Java SE 21 Developer Certification（OCP-819）相關程式範例。
+依照 Oracle Java SE 11 Developer（1Z0-819）考試範圍及學習順序整理相關程式範例。
+
+程式實作主要使用 Java SE 21，透過實際撰寫及執行程式，熟悉 Java 語法、物件導向概念及相關 API。
 
 目前整理的學習內容包括：
 
@@ -98,6 +105,7 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
 | 2026-10-18 | Control Flow、Arrays |
 | 2026-10-25 | Arrays、String |
 | 2026-11-01 | Wrapper Classes、Methods |
+| 2026-11-08 | Methods、Method Overloading、Varargs、Pass by Value |
 
 ### 練習內容
 
@@ -109,6 +117,13 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
 * String 類別與字串操作
 * Wrapper Classes（包裝類別）
 * Methods（方法）及相關語法
+* Boolean.parseBoolean() 與 Boolean.valueOf() 的使用
+* String.compareTo() 字串比較
+* Arrays.mismatch() 與 Arrays.compare() 陣列比較
+* Pass by Value（傳值呼叫）及參考型別參數的操作
+* Method Overloading（方法多載）
+* Varargs（可變參數）
+* 方法多載的選擇優先順序、自動轉型及自動裝箱
 
 ### 程式碼整理方式
 
@@ -116,11 +131,13 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
 
 `JavaOCP/Java_20261101_1/`
 
+`JavaOCP/Java_20261108_1/`
+
 各資料夾內使用 `src/` 保存 Java 原始程式碼，並依照不同考點及練習內容建立對應的 Java 類別。
 
 部分練習使用 Package 管理類別，方便熟悉 Java 套件及類別的組織方式。
 
-此區域以考點理解、程式執行結果及語法測試為主，持續累積 OCP-819 考試準備所需的實作經驗。
+此區域以考點理解、程式執行結果及語法測試為主，持續累積 1Z0-819 考試準備所需的實作經驗。
 
 ## 三、開發環境
 
@@ -133,7 +150,7 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
 * Git（用於版本控制）
 * GitHub 帳號（用於遠端程式碼管理）
 
-本專案以 Java SE 21 為 OCP-819 學習及考試準備的目標版本。
+本專案主要使用 Java SE 21 進行程式實作，並以 Java SE 11 作為 1Z0-819 考試準備的目標版本。
 
 可使用以下指令確認 Java 開發環境：
 
@@ -145,6 +162,16 @@ Java 基礎程式設計與 Oracle Java SE 21 Developer Certification（OCP-819�
 `javac -version` 用來確認 Java 編譯器版本。
 
 若使用其他 JDK 版本，請留意不同 Java 版本之間的語法及 API 差異。
+
+### Java 版本相容性檢查
+
+由於本專案使用 Java SE 21 進行實作，而認證考試以 Java SE 11 為準備目標，因此需要留意版本差異。
+
+可以使用以下指令檢查程式是否符合 Java SE 11 的語言及 API 相容性：
+
+    javac --release 11 -d out YourClass.java
+
+`--release 11` 可以指定 Java SE 11 的語言規則及 API 版本進行編譯檢查。
 
 ## 四、本機執行方式
 
@@ -307,7 +334,27 @@ GitHub 需要確認使用者身分，才能授權本機 Git 上傳程式碼。
 
 本專案已成功完成 GitHub 瀏覽器驗證及第一次 Git Push。
 
-### 5. 確認本機與 GitHub 同步狀態
+### 5. Git safe.directory 安全目錄設定
+
+遇到的問題
+
+在 Windows 環境執行 Git 指令時，出現：
+
+    fatal: detected dubious ownership in repository
+
+原因
+
+Git 偵測到專案資料夾的檔案系統無法記錄或確認擁有者資訊，因此基於安全性考量，暫時拒絕操作該目錄。
+
+解決方式
+
+將專案資料夾加入 Git 安全目錄：
+
+    git config --global --add safe.directory E:/Java-Learning-Portfolio
+
+完成設定後，即可重新執行 Git 指令。
+
+### 6. 確認本機與 GitHub 同步狀態
 
 當程式碼完成修改及推送後，可以透過以下指令確認目前 Git 狀態：
 
@@ -322,7 +369,7 @@ GitHub 需要確認使用者身分，才能授權本機 Git 上傳程式碼。
 
 代表目前本機工作目錄沒有尚未提交的修改，且本機分支已與遠端追蹤分支同步。
 
-### 6. Java 編譯與執行問題排查
+### 7. Java 編譯與執行問題排查
 
 常見問題
 
@@ -330,7 +377,7 @@ GitHub 需要確認使用者身分，才能授權本機 Git 上傳程式碼。
 * 找不到類別：確認編譯輸出目錄及 Classpath 設定。
 * Package 錯誤：確認 `package` 宣告與類別執行名稱。
 * 找不到 `main()` 方法：確認欲執行的類別是否包含程式進入點。
-* Java 版本不相容：確認 JDK 版本及程式使用的 Java 語法。
+* Java 版本不相容：確認 JDK 版本及程式使用的 Java 語法與 API。
 
 排查方式
 
@@ -352,7 +399,7 @@ https://github.com/hankcch2003/Java-Learning-Portfolio
 
 本機專案目錄：
 
-`F:\Java-Learning-Portfolio`
+`E:\Java-Learning-Portfolio`
 
 主要分支：
 
@@ -360,7 +407,9 @@ https://github.com/hankcch2003/Java-Learning-Portfolio
 
 ### 日常更新方式
 
-新增或修改 Java 程式後，可以依序執行：
+新增或修改 Java 程式及 README.md 後，可以依序執行：
+
+    git status
 
     git add .
 
@@ -379,6 +428,7 @@ https://github.com/hankcch2003/Java-Learning-Portfolio
 | `git pull` | 取得遠端最新變更 |
 | `git log --oneline` | 查看 Commit 紀錄 |
 | `git branch` | 查看目前分支 |
+| `git remote -v` | 查看遠端 Repository 設定 |
 
 本專案透過 `.gitignore` 排除不需要納入版本控制的檔案，例如 IDE 暫存資料、編譯產物及不適合公開的課程教材。
 
@@ -390,17 +440,60 @@ https://github.com/hankcch2003/Java-Learning-Portfolio
 * 熟悉變數、資料型別、運算子及流程控制。
 * 練習陣列、字串及方法的使用方式。
 * 建立 Java 物件導向程式設計的基礎。
-* 依照 Oracle Java SE 21 OCP-819 考試範圍整理程式範例。
-* 透過實際編譯及執行程式確認語法與執行結果。
+* 依照 Oracle Java SE 11 Developer（1Z0-819）考試範圍整理程式範例。
+* 使用 Java SE 21 進行程式編譯及執行，確認語法與執行結果。
+* 學習 Java SE 11 與 Java SE 21 之間的語法及 API 差異。
 * 使用 Package 管理 Java 類別。
+* 練習 Method Overloading、Varargs 及 Pass by Value。
+* 熟悉 String、Wrapper Classes 及 Arrays 相關 API。
 * 使用 Git 管理程式碼版本。
 * 使用 GitHub 保存及展示 Java 學習成果。
 * 記錄開發環境設定、版本控制及常見問題排查方式。
 
-本作品集主要整理 Java 基礎語法、Oracle Java SE 21 OCP-819 證照考試準備，以及相關程式實作練習，記錄學習過程中的程式碼、考點整理與實作成果。
+本作品集主要整理 Java 基礎語法、Oracle Java SE 11 Developer（1Z0-819）考試準備，以及 Java SE 21 程式實作練習，記錄學習過程中的程式碼、考點整理與實作成果。
 
 ## 八、更新說明（Updates）
 
-本作品集將隨著 Java 學習進度持續更新，逐步新增 Java 程式練習、OCP-819 考點整理、範例程式及相關學習文件。
+本作品集將隨著 Java 學習進度持續更新，逐步新增 Java 程式練習、1Z0-819 考點整理、範例程式及相關學習文件。
 
 新增內容將依照主題分類整理，並同步更新本 README.md，以呈現目前的學習進度及實作成果。
+
+## 九、Git 上傳指令
+
+在 Windows CMD 或 VS Code 終端機中，先進入專案資料夾：
+
+    E:
+    cd E:\Java-Learning-Portfolio
+
+確認目前 Git 狀態：
+
+    git status
+
+將修改過的檔案加入暫存區：
+
+    git add .
+
+建立 Commit：
+
+    git commit -m "Update README: Java SE 11 OCP and Java SE 21 practice"
+
+推送至 GitHub：
+
+    git push origin main
+
+確認推送結果：
+
+    git status
+
+若顯示：
+
+    On branch main
+    Your branch is up to date with 'origin/main'.
+
+    nothing to commit, working tree clean
+
+代表本機修改已提交，且本機分支與遠端分支同步。
+
+GitHub Repository：
+
+https://github.com/hankcch2003/Java-Learning-Portfolio
