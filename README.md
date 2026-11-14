@@ -8,7 +8,7 @@ Java 基礎程式設計與 Oracle Java SE 11 Developer Certification（1Z0-819�
 
 除了 Java 基礎練習，也持續整理 Oracle Java SE 11 Developer Certification（1Z0-819）的考點程式範例、語法測試及學習內容。
 
-本專案以 Java SE 11 作為認證考試準備目標，並使用 Java SE 21 作為主要開發環境，透過實際撰寫及執行程式，加深對 Java 語法及程式設計概念的理解。
+本專案以 Java SE 11 作為 Oracle 1Z0-819 認證考試的準備基準，並使用 JDK 25 作為主要開發及練習環境。
 
 本作品集依照學習日期及主題分類，方便查閱、測試及持續更新。
 
@@ -18,15 +18,15 @@ Java 基礎程式設計與 Oracle Java SE 11 Developer Certification（1Z0-819�
 |---|---|
 | 程式語言 | Java |
 | 考試版本 | Java SE 11 |
-| 開發版本 | Java SE 21 |
+| 開發版本 | Java SE 25 |
 | 基礎練習 | Java Basic |
 | 認證準備 | Oracle Java SE 11 Developer Certification（1Z0-819） |
 | 開發環境 | Windows |
-| 開發工具 | Java IDE、Visual Studio Code |
-| 命令列工具 | Windows CMD |
+| 開發工具 | Eclipse IDE |
+| Java 開發套件 | JDK 25 |
 | 版本控制 | Git、GitHub |
 
-本專案以 Java SE 11 作為 1Z0-819 考試準備方向，並使用 Java SE 21 進行練習。由於不同 Java 版本之間可能存在語法及 API 差異，練習時會特別留意版本相容性。
+本專案以 Java SE 11 作為 1Z0-819 考試準備方向，並使用 JDK 25 搭配 Eclipse IDE 進行程式撰寫、編譯及執行。
 
 ## 專案結構
 
@@ -138,44 +138,6 @@ Java-Learning-Portfolio/
 - Implicit Super Constructor（隱含父類別建構子呼叫）
 - Instance Variables（實例變數）及預設值
 
-### 2026-11-08 學習內容整理
-
-本次練習涵蓋 Methods、Method Overloading、Varargs，以及物件導向程式設計的基本概念。
-
-主要內容：
-
-**1. Method Overloading 與 Varargs**
-
-- Primitive Widening（基本型別擴大轉型）
-- Autoboxing（自動裝箱）
-- Reference Widening（參考型別向上轉型）
-- Varargs（可變參數）
-- 多載方法的選擇優先順序
-- Primitive Array 與 Reference Array 的型別差異
-- Array Runtime Type（陣列執行時期型別）
-- getClass()、getSimpleName()、getSuperclass()
-- Binary Numeric Promotion（二元數值提升）
-
-**2. Encapsulation 與 Access Modifiers**
-
-- private、public 與 Package-private
-- Getter 與 Setter Methods
-- 使用 Setter 集中管理資料驗證
-- this Keyword 的使用
-- Object Class 的 toString() 方法覆寫
-
-**3. Constructors 與 Inheritance**
-
-- Default Constructor（預設建構子）
-- Parameterized Constructor（有參數建構子）
-- Constructor Overloading（建構子多載）
-- Constructor Chaining（建構子串接）
-- this() 與 super() 的使用
-- Implicit Super Constructor（隱含父類別建構子呼叫）
-- extends 關鍵字與類別繼承
-- 子類別存取父類別繼承而來的成員
-- Instance Variables 的預設值
-
 ### 程式碼整理方式
 
 每次學習依照日期建立獨立資料夾，例如：
@@ -195,117 +157,66 @@ Java-Learning-Portfolio/
 開始執行前，請先準備：
 
 - Windows 開發環境
-- JDK 21（Java Development Kit）
-- 支援 Java 的 IDE 或 Visual Studio Code
-- Windows CMD 或其他終端機
+- JDK 25（Java Development Kit）
+- Eclipse IDE
 - Git（用於版本控制）
 - GitHub 帳號（用於遠端程式碼管理）
 
-本專案主要使用 Java SE 21 作為開發環境，並以 Java SE 11 作為 1Z0-819 考試準備的目標版本。
+本專案使用 JDK 25 作為主要開發環境，並透過 Eclipse IDE 進行 Java 程式碼撰寫、編譯及執行。
 
-可使用以下指令確認 Java 開發環境：
+### Java 開發環境確認
 
-```bash
-java -version
-javac -version
-```
+使用 Eclipse IDE 前，請確認：
 
-- `java -version`：確認 Java 執行環境版本。
-- `javac -version`：確認 Java 編譯器版本。
+- 已正確安裝 JDK 25。
+- Eclipse IDE 已設定正確的 JDK。
+- Java 專案可以正常載入。
+- Java 原始程式碼沒有編譯錯誤。
 
-### Java 版本相容性檢查
+## 四、專案執行方式
 
-由於本專案使用 Java SE 21 作為開發環境，而認證考試以 Java SE 11 為準備目標，因此需要留意版本差異。
+本專案使用 Eclipse IDE 作為主要開發工具，透過 Eclipse 管理 Java 專案、撰寫程式碼及執行練習。
 
-可以使用以下指令檢查程式是否符合 Java SE 11 的語言及 API 相容性：
+### 1. 開啟 Java 專案
 
-```bash
-javac --release 11 -d out YourClass.java
-```
+- 開啟 Eclipse IDE。
+- 選擇存放 Java 專案的 Workspace。
+- 在 Package Explorer 中找到欲執行的 Java 練習。
+- 展開 `src/` 資料夾，找到對應的 Java 類別。
 
-`--release 11` 可以指定 Java SE 11 的語言規則及 API 版本進行編譯檢查。
-
-## 四、本機執行方式
-
-### 1. 取得專案
-
-使用 Git Clone 下載 GitHub Repository：
-
-```bash
-git clone https://github.com/hankcch2003/Java-Learning-Portfolio.git
-```
-
-進入專案目錄：
-
-```bash
-cd Java-Learning-Portfolio
-```
-
-### 2. 確認 Java 開發環境
-
-在 CMD 輸入：
-
-```bash
-java -version
-javac -version
-```
-
-確認已安裝 JDK，且 Java 執行環境及編譯器可以正常使用。
-
-### 3. 執行 Java Basic 練習
+### 2. 執行 Java Basic 練習
 
 例如執行 HelloWorld 練習：
 
-```bash
-javac -d out JavaBasic/HelloWorld_1/src/HelloWorld_1.java
-```
+- 在 Eclipse 中開啟 `HelloWorld_1.java`。
+- 確認程式碼包含 `main()` 方法。
+- 點擊 Eclipse 工具列上的綠色三角形 Run 按鈕。
+- 執行結果會顯示在 Eclipse 的 Console 視窗。
 
-編譯完成後執行：
-
-```bash
-java -cp out HelloWorld_1
-```
-
-其中：
-
-- `javac`：Java 編譯器。
-- `-d out`：指定編譯後的 `.class` 檔案輸出目錄。
-- `java -cp out`：指定類別搜尋路徑並執行程式。
-
-實際執行時，請依照欲測試的練習資料夾及 Java 類別名稱調整檔案路徑。
-
-### 4. 執行 Java OCP 練習
+### 3. 執行 Java OCP 練習
 
 OCP 練習依照不同日期及考點建立獨立資料夾。
 
-若程式包含 Package，編譯及執行時需要依照 Package 名稱指定完整類別路徑。
+若程式包含 Package，請確認 Java 類別的 Package 宣告及資料夾結構正確。
 
-例如：
+執行方式：
 
-```bash
-javac -d out JavaOCP/Java_20261101_1/src/javaocp/JavaWrappedClass_1.java
-```
+- 在 Eclipse 的 Package Explorer 中找到欲測試的 Java 類別。
+- 開啟包含 `main()` 方法的 Java 類別。
+- 點擊 Run 按鈕執行程式。
+- 在 Console 視窗查看執行結果。
 
-執行：
+部分練習可能包含多個 Java 類別，執行前需要確認正確的程式進入點。
 
-```bash
-java -cp out javaocp.JavaWrappedClass_1
-```
+### 4. Eclipse 執行注意事項
 
-若程式使用其他 Package，請依照原始程式碼中的 `package` 宣告調整執行名稱。
+執行 Java 程式前請確認：
 
-部分練習可能需要先確認類別是否包含 `main()` 方法，才能直接執行。
-
-### 5. 使用 IDE 執行
-
-也可以使用支援 Java 的 IDE 開啟個別練習資料夾。
-
-執行前請確認：
-
-- 已正確設定 JDK。
+- 已正確設定 JDK 25。
 - Java 原始程式碼沒有編譯錯誤。
 - Package 與資料夾結構符合程式碼宣告。
-- 執行的類別包含適當的程式進入點。
+- 執行的類別包含適當的 `main()` 方法。
+- Console 視窗能正常顯示程式執行結果。
 
 各練習以獨立測試為主，方便依照不同考點進行編譯、執行及結果確認。
 
@@ -398,7 +309,7 @@ git remote -v
 
 **遇到的情況**
 
-第一次執行 Git Push 時，CMD 顯示：
+第一次執行 Git Push 時，出現：
 
 ```text
 info: please complete authentication in your browser...
@@ -412,7 +323,7 @@ GitHub 需要確認使用者身分，才能授權本機 Git 上傳程式碼。
 
 依照提示開啟瀏覽器，完成 GitHub 身分驗證及授權。
 
-完成授權後重新確認 CMD 是否出現成功推送的訊息。
+完成授權後重新確認是否成功推送。
 
 ### 5. Git safe.directory 安全目錄設定
 
@@ -461,19 +372,19 @@ nothing to commit, working tree clean
 
 **常見問題**
 
-- `javac` 無法辨識：確認 JDK 是否正確安裝，以及 PATH 環境變數設定。
-- 找不到類別：確認編譯輸出目錄及 Classpath 設定。
-- Package 錯誤：確認 `package` 宣告與類別執行名稱。
+- Java 編譯錯誤：確認 Java 原始程式碼及語法是否正確。
+- 找不到類別：確認 Package、類別名稱及專案結構。
+- Package 錯誤：確認 `package` 宣告與資料夾結構。
 - 找不到 `main()` 方法：確認欲執行的類別是否包含程式進入點。
-- Java 版本不相容：確認 JDK 版本及程式使用的 Java 語法與 API。
+- Eclipse 無法執行：確認 JDK 設定及專案建置狀態。
 
 **排查方式**
 
-1. 使用 `java -version` 確認 Java 執行環境。
-2. 使用 `javac -version` 確認編譯器。
-3. 檢查 Java 原始程式碼及 Package 宣告。
-4. 確認編譯輸出目錄與執行類別名稱。
-5. 查看 CMD 或 IDE 顯示的完整錯誤訊息。
+1. 確認 Eclipse 已正確設定 JDK。
+2. 檢查 Java 原始程式碼及 Package 宣告。
+3. 確認執行的類別是否包含 `main()` 方法。
+4. 查看 Eclipse Problems 視窗中的錯誤訊息。
+5. 查看 Console 視窗中的執行結果及錯誤訊息。
 
 將問題分成環境設定、程式編譯及程式執行三個部分，有助於縮小問題範圍。
 
@@ -528,8 +439,8 @@ git push
 - 練習陣列、字串及方法的使用方式。
 - 建立 Java 物件導向程式設計的基礎。
 - 依照 Oracle Java SE 11 Developer（1Z0-819）考試範圍整理程式範例。
-- 使用 Java SE 21 進行程式編譯及執行。
-- 學習 Java SE 11 與 Java SE 21 之間的語法及 API 差異。
+- 使用 JDK 25 進行程式開發及執行。
+- 使用 Eclipse IDE 管理 Java 專案及執行程式。
 - 使用 Package 管理 Java 類別。
 - 練習 Method Overloading、Varargs 及 Pass by Value。
 - 熟悉 String、Wrapper Classes 及 Arrays 相關 API。
