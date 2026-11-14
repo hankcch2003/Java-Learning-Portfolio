@@ -175,13 +175,13 @@ Java-Learning-Portfolio/
 
 ## 四、專案執行方式
 
-本專案使用 Eclipse IDE 作為主要開發工具，透過 Eclipse 管理 Java 專案、撰寫程式碼及執行練習。
+本專案使用 Eclipse IDE 作為主要開發工具，所有 Java 練習程式皆透過 Eclipse IDE 進行撰寫、編譯及執行，不需要另外使用命令列指令執行。
 
 ### 1. 開啟 Java 專案
 
 - 開啟 Eclipse IDE。
 - 選擇存放 Java 專案的 Workspace。
-- 在 Package Explorer 中找到欲執行的 Java 練習。
+- 在 Package Explorer 中找到欲執行的 Java 練習專案。
 - 展開 `src/` 資料夾，找到對應的 Java 類別。
 
 ### 2. 執行 Java Basic 練習
@@ -191,18 +191,18 @@ Java-Learning-Portfolio/
 - 在 Eclipse 中開啟 `HelloWorld_1.java`。
 - 確認程式碼包含 `main()` 方法。
 - 點擊 Eclipse 工具列上的綠色三角形 Run 按鈕。
+- 也可以在 Java 程式碼編輯區按滑鼠右鍵，選擇 Run As → Java Application。
 - 執行結果會顯示在 Eclipse 的 Console 視窗。
 
 ### 3. 執行 Java OCP 練習
 
 OCP 練習依照不同日期及考點建立獨立資料夾。
 
-若程式包含 Package，請確認 Java 類別的 Package 宣告及資料夾結構正確。
-
 執行方式：
 
 - 在 Eclipse 的 Package Explorer 中找到欲測試的 Java 類別。
 - 開啟包含 `main()` 方法的 Java 類別。
+- 確認 Package 宣告及類別結構正確。
 - 點擊 Run 按鈕執行程式。
 - 在 Console 視窗查看執行結果。
 
@@ -212,13 +212,13 @@ OCP 練習依照不同日期及考點建立獨立資料夾。
 
 執行 Java 程式前請確認：
 
-- 已正確設定 JDK 25。
+- Eclipse IDE 已正確設定 JDK 25。
 - Java 原始程式碼沒有編譯錯誤。
 - Package 與資料夾結構符合程式碼宣告。
 - 執行的類別包含適當的 `main()` 方法。
 - Console 視窗能正常顯示程式執行結果。
 
-各練習以獨立測試為主，方便依照不同考點進行編譯、執行及結果確認。
+本專案以 Eclipse IDE 作為統一的 Java 開發及執行環境，各練習透過 IDE 個別執行，方便測試不同 Java 語法及考試知識點。
 
 ## 五、開發過程中的問題與解決方式
 
