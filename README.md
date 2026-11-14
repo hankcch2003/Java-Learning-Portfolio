@@ -500,7 +500,7 @@ https://github.com/hankcch2003/Java-Learning-Portfolio
 ```bash
 git status
 git add .
-git commit -m "Update: Java OCP practice"
+git commit -m "輸入本次修改內容"
 git push
 ```
 
@@ -540,58 +540,8 @@ git push
 
 本作品集主要整理 Java 基礎語法、Oracle Java SE 11 Developer（1Z0-819）考試準備，以及相關 Java 練習成果。
 
-## 八、更新說明（Updates）
+## 八、更新說明
 
 本作品集將隨著 Java 學習進度持續更新，逐步新增 Java 程式練習、1Z0-819 考點整理、範例程式及相關學習文件。
 
 新增內容將依照主題分類整理，並同步更新本 README.md，以呈現目前的學習進度及學習成果。
-
-## 九、Git 上傳指令
-
-在 Windows CMD 或 VS Code 終端機中，先進入專案資料夾：
-
-```bash
-E:
-cd E:\Java-Learning-Portfolio
-```
-
-確認目前 Git 狀態：
-
-```bash
-git status
-```
-
-將修改過的檔案加入暫存區：
-
-```bash
-git add .
-```
-
-建立 Commit：
-
-```bash
-git commit -m "Update README: Java SE 11 OCP and Java SE 21 practice"
-```
-
-推送至 GitHub：
-
-```bash
-git push origin main
-```
-
-確認推送結果：
-
-```bash
-git status
-```
-
-若顯示：
-
-```text
-On branch main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-```
-
-代表本機修改已提交，且本機分支與遠端分支同步。
